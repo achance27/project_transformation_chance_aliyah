@@ -41,7 +41,7 @@ a:hover {
     background: #FFFFFF url(../img/img05.jpg) repeat;
 }
 .container {
-    width: 1000px;
+  /*  width: 1000px;*/
     margin: 0px auto;
 }
 
@@ -57,7 +57,6 @@ header {
 }
 .content img {
 	width: 100%;
-
 }
 
 /* Logo */
@@ -181,7 +180,7 @@ nav .current_page_item a {
 
 /* Main */
 main {
-    width: 1000px;
+  /*  width: 1000px; */
     margin: 0 auto;
     padding: 30px 0px;
 }
@@ -189,7 +188,8 @@ main {
 /* Content */
 #content {
     float: right;
-    width: 660px;
+  /*  width: 660px;n*/
+		width: 100%;
     padding: 0px 0px 0px 0px;
 }
 .post {
@@ -328,7 +328,7 @@ aside a:hover {
 /* Three Column Footer Content */
 #footer-content {
     overflow: hidden;
-    width: 1000px;
+/*    width: 1000px; */
     margin: 0px auto;
     color: #D6E2F0;
 }
@@ -429,7 +429,7 @@ footer a {
 }
 #banner {
     margin: 0px auto;
-    width: 1000px;
+/*    width: 1000px;  */
     height: 340px;
     background: url(../img/img03.png) no-repeat left bottom;
 }
