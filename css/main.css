@@ -5,7 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.875rem;
     color: #5B5B5B;
-		width: 100vw;
+		width: 100%;
 }
 h1, h2, h3 {
     margin: 0;
@@ -18,6 +18,7 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 1.75rem;
+		margin-left: 10px;
 }
 h2 {
     font-size: 2.438rem;
@@ -51,7 +52,7 @@ a:hover {
 }
 header {
     width: 100%;
-    height: 150px;
+  /*  height: 150px; */
     margin: 0 auto;
     padding: 0px 0px;
 }
@@ -139,15 +140,14 @@ header {
 
 /* Menu/Navigation */
 nav {
-    float: right;
-    width: 500px;
+/*    float: right; */
     height: 90px;
     margin: 0 auto;
     padding: 0;
 }
 nav ul {
-    float: right;
-    margin: 0;
+    float: left;
+		margin: 0;
     padding: 20px 0px 0px 0px;
     list-style: none;
     line-height: normal;
@@ -159,7 +159,7 @@ nav a {
     display: block;
     line-height: 100px;
     margin-right: 1px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 15px 0px 15px;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
@@ -180,15 +180,12 @@ nav .current_page_item a {
 
 /* Main */
 main {
-  /*  width: 1000px; */
-    margin: 0 auto;
+    margin: 10px;
     padding: 30px 0px;
 }
 
 /* Content */
 #content {
-    float: right;
-  /*  width: 660px;n*/
 		width: 100%;
     padding: 0px 0px 0px 0px;
 }
@@ -251,11 +248,13 @@ main {
     text-align: center;
     text-decoration: none;
 }
+.copy {
+	margin-top: 50px;
+}
 
 /* Sidebar */
 aside {
     float: left;
-    width: 270px;
     margin: 0px;
     padding: 30px 0px 0px 0px;
 }
@@ -446,8 +445,71 @@ footer a {
 }
 
 /* Media Queries */
-@media (max-wdith: 680px) {
-		body {
-			with: 10%;
-		}
+@media (min-width: 400px) {
+	nav {
+		width: 100%;
+	}
+	aside {
+		width: 70%;
+		margin-left: 15%;
+	}
+	aside ul {
+		font-size: 1rem;
+	}
+	/*main {
+		width: 60%;
+		margin-left: 20%;
+	} */
+}
+@media (min-width: 500px) {
+	nav ul {
+		float: right;
+	}
+	aside {
+		width: 250px;
+		margin-left: 2%;
+	}
+	main {
+		margin-left: 100px;
+	}
+	#content {
+		width: 400px;
+		margin-right: 5%;
+	}
+}
+@media (min-width: 600px) {
+	#content {
+		width: 70%;
+		margin-left: 15%;
+	}
+	aside {
+		margin-left: 20%;
+	}
+}
+/* @media (min-width: 1000px) {
+	#content {
+		width: 400px;
+	}
+} */
+@media (min-width: 1024px) {
+	.container, #banner, main  {
+		width: 1000px;
+	}
+	main {
+		margin: 0 auto;
+	}
+	#content {
+		float: right;
+		width: 660px;
+		padding: 0;
+		margin: 0;
+	}
+	aside {
+		width: 270px;
+		margin: 0;
+	}
+	aside ul {
+		margin: 0;
+		padding: 0;
+	}
 }
