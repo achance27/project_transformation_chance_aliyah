@@ -11,7 +11,6 @@ h1, h2, h3 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    font-weight: normal;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     color: #222222;
@@ -31,8 +30,7 @@ p, ul, ol {
     margin-top: 0;
     line-height: 180%;
 }
-ul, ol {
-}
+
 a {
     color: #5E5E5E;
 }
@@ -56,6 +54,7 @@ header {
 }
 .content img {
 	width: 100%;
+	max-width: 1000px;
 }
 
 /* Logo */
@@ -65,15 +64,16 @@ h1 {
     margin: 0;
     padding: 0;
     color: #FFFFFF;
-}
-h1 {
-    line-height: 120px;
-    letter-spacing: -2px;
-    font-size: 3.313rem;
+		line-height: 120px;
+		letter-spacing: -2px;
+		font-size: 3.313rem;
 }
 h1 a {
     color: #1F1F1F;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+		border: none;
+		background: none;
+		text-decoration: none;
 }
 h1 p {
     margin: 0;
@@ -86,19 +86,14 @@ h1 p {
 h1 p a {
     color: #8E8E8E;
 }
-h1 a {
-    border: none;
-    background: none;
-    text-decoration: none;
-    color: #000000;
-}
 
-/* Splash
+
+/* Splash */
 #splash {
     width: 960px;
     height: 300px;
     margin: 0px auto;
-} */
+}
 
 /* Search */
 #search {
@@ -246,16 +241,13 @@ main {
 aside {
     float: left;
     margin: 0px;
+		padding: 0;
     padding: 30px 0px 0px 0px;
 }
 aside ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-aside article {
-    margin: 0;
-    padding: 0;
 }
 aside article ul {
     margin: 0px 0px;
@@ -267,14 +259,14 @@ aside article li {
     margin: 0px 0px;
     border-left: none;
 }
-aside li li span {
+aside article li span {
     display: block;
     margin-top: -20px;
     padding: 0;
     font-size: 0.6875rem;
     font-style: italic;
 }
-aside li li a {
+aside article li a {
     padding: 0px 0px 0px 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
@@ -300,7 +292,6 @@ aside a:hover {
 /* Calendar */
 #calendar {
 }
-
 #calendar_wrap {
     padding: 20px;
 }
@@ -417,9 +408,6 @@ footer a {
 }
 #banner .content {
 }
-#content img {
-	max-width: 1000px;
-}
 
 .list-style1 {
     margin: 0px;
@@ -436,7 +424,11 @@ footer a {
 }
 
 /* Media Queries */
+/* 400px and Up */
 @media (min-width: 400px) {
+	h1 {
+		margin-left: 10px;
+	}
 	nav {
 		width: 100%;
 	}
@@ -448,6 +440,8 @@ footer a {
 		font-size: 1rem;
 	}
 }
+
+/* 500px and Up */
 @media (min-width: 500px) {
 	nav ul {
 		float: right;
@@ -464,6 +458,8 @@ footer a {
 		margin-right: 5%;
 	}
 }
+
+/* 600px and Up */
 @media (min-width: 600px) {
 	main {
 		width: 70%;
@@ -473,11 +469,8 @@ footer a {
 		margin-left: 20%;
 	}
 }
-/* @media (min-width: 1000px) {
-	#content {
-		width: 400px;
-	}
-} */
+
+/* 1024px and Up */
 @media (min-width: 1024px) {
 	.container, #banner, #content  {
 		width: 1000px;
