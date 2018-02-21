@@ -24,7 +24,8 @@ h2 {
     font-size: 2.438rem;
 }
 h3 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
+		padding-bottom: 10px;
 }
 p, ul, ol {
     margin-top: 0;
@@ -47,8 +48,6 @@ a:hover {
 }
 
 /* Header */
-#header-wrapper {
-    overflow: hidden;
 }
 header {
     width: 100%;
@@ -60,25 +59,23 @@ header {
 }
 
 /* Logo */
-#logo {
+h1 {
     float: left;
     width: 300px;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
 }
-#logo h1, #logo p {
-}
-#logo h1 {
+h1 {
     line-height: 120px;
     letter-spacing: -2px;
     font-size: 3.313rem;
 }
-#logo h1 a {
+h1 a {
     color: #1F1F1F;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
 }
-#logo p {
+h1 p {
     margin: 0;
     padding: 0px 0 0 0px;
     letter-spacing: -1px;
@@ -86,10 +83,10 @@ header {
     font-style: italic;
     color: #8E8E8E;
 }
-#logo p a {
+h1 p a {
     color: #8E8E8E;
 }
-#logo a {
+h1 a {
     border: none;
     background: none;
     text-decoration: none;
@@ -256,15 +253,15 @@ aside ul {
     padding: 0;
     list-style: none;
 }
-aside li {
+aside article {
     margin: 0;
     padding: 0;
 }
-aside li ul {
+aside article ul {
     margin: 0px 0px;
     padding-bottom: 30px;
 }
-aside li li {
+aside article li {
     line-height: 40px;
     border-bottom: 1px solid #E7EBED;
     margin: 0px 0px;
@@ -285,7 +282,7 @@ aside h2 {
     height: 38px;
     padding: 0px 0px 30px 0px;
     letter-spacing: -.5px;
-    font-size: 1.563rem;
+    font-size: 2rem;
     color: #222222;
 }
 aside p {
