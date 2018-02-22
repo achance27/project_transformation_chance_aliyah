@@ -13,7 +13,7 @@ Taking an HTML website and making it into a brand new-ish responsive HTML5 websi
 
 ## Resources
 * [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L107-L169)
- * To hide some headers which improve the overall structure but are not visually appealing. 
+	* To hide some headers which improve the overall structure but are not visually appealing. 
 
 ## Deductions
 I reviewed the list of decuations for this project and in the syllabus.
