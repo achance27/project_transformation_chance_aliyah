@@ -19,4 +19,4 @@ Taking an HTML website and making it into a brand new-ish responsive HTML5 websi
 I reviewed the list of decuations for this project and in the syllabus.
 
 ## Comments
-I've never used the time tag so that was new to me
+I've never used the time tag so that was new to me. Easier than I thought, since the website was pretty mobile friendly before. There was just room for errors if I missed something in the lecture, which I did at times. But I definitely learn new things!
