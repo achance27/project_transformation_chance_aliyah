@@ -19,18 +19,13 @@ h1 {
     font-size: 1.75rem;
 		margin-left: 10px;
 }
-h2 {
+h2, h3 {
     font-size: 2.438rem;
-}
-h3 {
-    font-size: 1.5rem;
-		padding-bottom: 10px;
 }
 p, ul, ol {
     margin-top: 0;
     line-height: 180%;
 }
-
 a {
     color: #5E5E5E;
 }
@@ -269,7 +264,7 @@ aside article li a {
     padding: 0px 0px 0px 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
-aside h2 {
+aside h3 {
     height: 38px;
     padding: 0px 0px 30px 0px;
     letter-spacing: -.5px;
@@ -420,6 +415,17 @@ footer a {
 	content: '';
 	clear: both;
 	display: block;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
 }
 
 /* Media Queries */
